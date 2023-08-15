@@ -1,4 +1,3 @@
-
 //window.addEventListener("load", fetchSong);
 
 function fetchSong() {
@@ -13,8 +12,7 @@ function fetchSong() {
 	fetch('https://spotify23.p.rapidapi.com/tracks/?ids=0icJXGequFzOB37jNOLaeU', options)
 		.then(response => response.json())
 		.then(response => PlayTrack(response))
-		.catch(err => console.error(err));
-		
+		.catch(err => console.error(err));	
 }
 
 function PlayTrack(response) {
